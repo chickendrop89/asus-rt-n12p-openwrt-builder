@@ -37,7 +37,7 @@ fi;
 
 # Throw error if binaries (used in this script) are missing
 if ! [[ -x "$(command -v make)" && -x "$(command -v git)" && -x "$(command -v wget)" && -x "$(command -v sed)" ]]; then
-  wecho "Essential build utilities missing! install required dependencies first" >&2;
+  wecho "Essential build utilities missing! install required packages first" >&2;
   wecho "https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem"
   exit;
 fi;
